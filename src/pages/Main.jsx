@@ -75,7 +75,7 @@ export default function Main() {
     <div>
       <Navbar isScrolled={isScrolled} />
       <div className="flex h-screen pt-28" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
-        <header class="m-32 w-1/2">
+        <header class="p-32 w-1/2">
           <h1 class="font-bold text-7xl text-gray-300">
               Wail
               <span class="text-orange-400"> Ameur</span>
@@ -94,7 +94,7 @@ export default function Main() {
             </a>
           </div>
         </header>
-        <div className="justify-end">
+        <div className="justify-end pl-48">
           <a rel="noopener noreferrer" href={`${process.env.PUBLIC_URL}/WailAmeurCV.pdf`} download="Wail_Ameur_Resume.pdf">
             <img className="mt-10 rounded-full profile-pic" src={profilePicture} alt="Wail Ameur"/>
           </a>
@@ -109,7 +109,7 @@ export default function Main() {
 
       <section class="m-10 p-4 bg-slate-500 rounded-xl" id="projects">
         <h2 class="text-xl font-medium text-orange-400">Projects</h2>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="flex justify-center ">
           {projects.map((project) => (
             <ProjectCard project={project} />
           ))}
