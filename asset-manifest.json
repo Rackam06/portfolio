@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.afc97bfa.css",
-    "main.js": "/portfolio/static/js/main.5b88436e.js",
+    "main.css": "/portfolio/static/css/main.9f258867.css",
+    "main.js": "/portfolio/static/js/main.6e1583e0.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/SF-Pro.ttf": "/portfolio/static/media/SF-Pro.6a077eca96764e3f1535.ttf",
     "static/media/wallpaper3.jpg": "/portfolio/static/media/wallpaper3.0d6c387198112f922782.jpg",
     "static/media/cosmic_adventures.png": "/portfolio/static/media/cosmic_adventures.985376f1e3e7c859f8f7.png",
     "static/media/python_logo.png": "/portfolio/static/media/python_logo.82efb64f8698a267f8bf.png",
@@ -17,12 +18,12 @@
     "static/media/linkedin_logo.png": "/portfolio/static/media/linkedin_logo.63b96b9ea7fdfd7a5ee0.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.afc97bfa.css.map": "/portfolio/static/css/main.afc97bfa.css.map",
-    "main.5b88436e.js.map": "/portfolio/static/js/main.5b88436e.js.map",
+    "main.9f258867.css.map": "/portfolio/static/css/main.9f258867.css.map",
+    "main.6e1583e0.js.map": "/portfolio/static/js/main.6e1583e0.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afc97bfa.css",
-    "static/js/main.5b88436e.js"
+    "static/css/main.9f258867.css",
+    "static/js/main.6e1583e0.js"
   ]
 }
