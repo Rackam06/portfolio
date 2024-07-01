@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'San Francisco';
+    src: url('fonts/SF_Pro/SF-Pro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

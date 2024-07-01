@@ -74,29 +74,28 @@ export default function Main() {
   return (
     <div>
       <Navbar isScrolled={isScrolled} />
-      <div className="flex h-screen pt-28" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
-        <header class="p-32 w-1/2">
-          <h1 class="font-bold text-7xl text-gray-300">
-              Wail
-              <span class="text-orange-400"> Ameur</span>
-              ,
-          </h1>
-          <TypingEffect />
-          <div class="pt-12 flex space-x-4" id="links">
+      <div className="flex flex-col md:flex-row h-screen pt-28" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
+        <header className="p-32 w-full md:w-1/2">
+        <h1 className="font-bold text-4xl md:text-8xl text-gray-300">
+          Wail
+          <span className="text-orange-400"> Ameur</span>,
+        </h1>
+        <TypingEffect className="text-base md:text-lg" />
+          <div className="pt-12 flex justify-center md:justify-start space-x-4" id="links">
             <a href="#" onClick={handleDiscordClick}>
-              <img class="link-logo hover-effect" src={discordLogo} alt="Discord username : .rackam" width="50" height="50" />
+              <img className="link-logo hover-effect" src={discordLogo} alt="Discord username : .rackam" width="50" height="50" />
             </a>
             <a href="https://github.com/Rackam06" target="_blank">
-              <img class="link-logo hover-effect" src={githubLogo} alt="GitHub" width="50" height="50" />
+              <img className="link-logo hover-effect" src={githubLogo} alt="GitHub" width="50" height="50" />
             </a>
             <a href="https://www.linkedin.com/in/wail-ameur-359b39278/" target="_blank">
-              <img class="link-logo hover-effect" src={linkedinLogo} alt="LinkedIn" width="50" height="50" />
+              <img className="link-logo hover-effect" src={linkedinLogo} alt="LinkedIn" width="50" height="50" />
             </a>
           </div>
         </header>
-        <div className="justify-end pl-48">
-          <a rel="noopener noreferrer" href={`${process.env.PUBLIC_URL}/WailAmeurCV.pdf`} download="Wail_Ameur_Resume.pdf">
-            <img className="mt-10 rounded-full profile-pic" src={profilePicture} alt="Wail Ameur"/>
+        <div className="flex justify-center md:justify-end w-full md:pr-32">
+          <a rel="noopener noreferrer" href={`${process.env.PUBLIC_URL}/Resume_Ameur.pdf`} download="Wail_Ameur_Resume.pdf">
+            <img className="mt-10 rounded-full profile-pic md:h-96 md:w-96 w-28 h-28" src={profilePicture} alt="Wail Ameur"/>
           </a>
         </div>
       </div>
@@ -109,7 +108,7 @@ export default function Main() {
 
       <section class="m-10 p-4 bg-slate-500 rounded-xl" id="projects">
         <h2 class="text-xl font-medium text-orange-400">Projects</h2>
-        <div class="flex justify-center ">
+        <div class="flex justify-center gap-10">
           {projects.map((project) => (
             <ProjectCard project={project} />
           ))}

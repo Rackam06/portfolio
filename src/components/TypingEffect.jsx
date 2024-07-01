@@ -26,10 +26,13 @@ function TypingEffect() {
 
     return () => clearTimeout(timeout);
   }, [subIndex, index, reverse]);
+  
 
   return (
     <>
-      <h2 className="font-bold text-6xl text-gray-300" style={{ minHeight: '1em' }}>{`${words[index].substring(0, subIndex)}${subIndex === words[index].length ? '_' : ''}`}</h2>
+      <h2 className="font-bold text-3xl md:text-6xl text-gray-300" style={{ minHeight: '1em' }}>
+        {`${words[index].substring(0, subIndex)}${subIndex === words[index].length ? '_' : ''}`}
+      </h2>
     </>
   );
 }
